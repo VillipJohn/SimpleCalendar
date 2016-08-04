@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/material_blue_grey_900"
+    tools:context=".ui.MainActivity"
+   >
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:name="com.example.villip.simplecalendar.ui.MainHeaderFragment"
+        android:id="@+id/fragment"
+        tools:layout="@layout/fragment_main_header"
+        android:layout_weight="2" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:name="com.example.villip.simplecalendar.ui.MainContentFragment"
+        android:id="@+id/fragment_content_in_activity"
+        tools:layout="@layout/fragment_main_content"
+        android:layout_weight="5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="-20dp" />
+
+</LinearLayout>

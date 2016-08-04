@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Simple Calendar</string>
+
+    <string name="title_activity_list_events">List of events</string>
+
+
+    <string-array name="months_years_array">
+        <item>JANUARY 2016</item>
+        <item>FEBRUARY 2016</item>
+        <item>MARCH 2016</item>
+        <item>APRIL 2016</item>
+        <item>MAY 2016</item>
+        <item>JUNE 2016</item>
+        <item>JULY 2016</item>
+        <item>AUGUST 2016</item>
+        <item>SEPTEMBER 2016</item>
+        <item>OCTOBER 2016</item>
+        <item>NOVEMBER 2016</item>
+        <item>DECEMBER 2016</item>
+        <item>JANUARY 2017</item>
+        <item>FEBRUARY 2017</item>
+        <item>MARCH 2017</item>
+        <item>APRIL 2017</item>
+        <item>MAY 2017</item>
+        <item>JUNE 2017</item>
+        <item>JULY 2017</item>
+        <item>AUGUST 2017</item>
+        <item>SEPTEMBER 2017</item>
+        <item>OCTOBER 2017</item>
+        <item>NOVEMBER 2017</item>
+        <item>DECEMBER 2017</item>
+        <item>JANUARY 2018</item>
+        <item>FEBRUARY 2018</item>
+        <item>MARCH 2018</item>
+        <item>APRIL 2018</item>
+        <item>MAY 2018</item>
+        <item>JUNE 2018</item>
+        <item>JULY 2018</item>
+        <item>AUGUST 2018</item>
+        <item>SEPTEMBER 2018</item>
+        <item>OCTOBER 2018</item>
+        <item>NOVEMBER 2018</item>
+        <item>DECEMBER 2018</item>
+        <item>JANUARY 2019</item>
+        <item>FEBRUARY 2019</item>
+        <item>MARCH 2019</item>
+        <item>APRIL 2019</item>
+        <item>MAY 2019</item>
+        <item>JUNE 2019</item>
+        <item>JULY 2019</item>
+        <item>AUGUST 2019</item>
+        <item>SEPTEMBER 2019</item>
+        <item>OCTOBER 2019</item>
+        <item>NOVEMBER 2019</item>
+        <item>DECEMBER 2019</item>
+        <item>JANUARY 2020</item>
+        <item>FEBRUARY 2020</item>
+        <item>MARCH 2020</item>
+        <item>APRIL 2020</item>
+        <item>MAY 2020</item>
+        <item>JUNE 2020</item>
+        <item>JULY 2020</item>
+        <item>AUGUST 2020</item>
+        <item>SEPTEMBER 2020</item>
+        <item>OCTOBER 2020</item>
+        <item>NOVEMBER 2020</item>
+        <item>DECEMBER 2020</item>
+    </string-array>
+
+    <string-array name="months_array">
+        <item>JANUARY</item>
+        <item>FEBRUARY</item>
+        <item>MARCH</item>
+        <item>APRIL</item>
+        <item>MAY</item>
+        <item>JUNE</item>
+        <item>JULY</item>
+        <item>AUGUST</item>
+        <item>SEPTEMBER</item>
+        <item>OCTOBER</item>
+        <item>NOVEMBER</item>
+        <item>DECEMBER</item>
+    </string-array>
+
+
+    <string-array name="event_variants">
+        <item>Meeting</item>
+        <item>Note</item>
+        <item>Important date</item>
+        <item>Notification</item>
+    </string-array>
+
+</resources>
+
+
+
+
+

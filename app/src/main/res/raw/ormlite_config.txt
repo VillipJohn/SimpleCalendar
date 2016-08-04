@@ -1,0 +1,26 @@
+#
+# generated on 2016/06/20 02:57:00
+#
+# --table-start--
+dataClass=com.example.villip.simplecalendar.data.orm.Note
+tableName=notes
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=date
+# --field-end--
+# --field-start--
+fieldName=notes_type
+# --field-end--
+# --field-start--
+fieldName=notes_text
+# --field-end--
+# --field-start--
+fieldName=alarm
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
