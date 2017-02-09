@@ -2,8 +2,6 @@ package com.example.villip.simplecalendar.ui;
 
 import android.content.Context;
 import android.os.Bundle;
-
-
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -85,9 +83,11 @@ public class MainHeaderFragment extends Fragment {
         btnNextMonth = (Button) rootView.findViewById(R.id.btn_next_month);
 
         Calendar calendar = Calendar.getInstance();
-        intMonthYear = calendar.get(Calendar.MONTH);
+        //calendar.get(Calendar.YEAR) - 2016
+        //selectedMonthYear / 12 + 2016;
+        intMonthYear = calendar.get(Calendar.MONTH) + (calendar.get(Calendar.YEAR) - 2017)*12;
 
-        //Log.d(TAG, "onCreateView после опрделения intMonthYear " + intMonthYear );
+        Log.d(TAG, "onCreateView после определения intMonthYear " + intMonthYear );
 
         spinner = (Spinner) rootView.findViewById(R.id.months_spinner);
 
@@ -96,18 +96,16 @@ public class MainHeaderFragment extends Fragment {
                 R.array.months_years_array, R.layout.spinner_header);
         // Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(R.layout.spinner_header_dropdown_item);
+
         // Apply the adapter to the spinner
-
         spinner.setAdapter(adapter);
-
         spinner.setSelection(intMonthYear);
-
         monthYear = spinner.getSelectedItem().toString();
       /*  if (mListener != null) {
             mListener.onFragmentHeaderInteraction(monthYear);
         }*/
 
-        //Log.d(TAG, "onCreateView после определения Spinner intMonthYear=" + intMonthYear);
+        Log.d(TAG, "onCreateView после определения Spinner monthYear=" + monthYear);
 
         return rootView;
     }
@@ -116,10 +114,7 @@ public class MainHeaderFragment extends Fragment {
     public void onStart() {
         super.onStart();
 
-
-
     }
-
 
 
     @Override
@@ -134,6 +129,7 @@ public class MainHeaderFragment extends Fragment {
                 intMonthYear = selectedItemPosition;
 
                 monthYear = spinner.getSelectedItem().toString();
+                Log.d(TAG, "onResume.setOnItemSelectedListener monthYear=" + monthYear);
                 updateDetail();
             }
             public void onNothingSelected(AdapterView<?> parent) {
@@ -161,21 +157,18 @@ public class MainHeaderFragment extends Fragment {
         btnNextMonth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intMonthYear++;
 
-                spinner.setSelection(intMonthYear);
-
-              /*  monthYear = spinner.getSelectedItem().toString();
-                updateDetail();*/
+                //Если intMonthYear будет больше длинны массива строк, то программа упадёт :)
+                if(intMonthYear < 167){
+                    intMonthYear++;
+                    spinner.setSelection(intMonthYear);
+                }
             }
         });
 
 
         monthYear = spinner.getSelectedItem().toString();
-        //updateDetail();
-       /* if (mListener != null) {
-            mListener.onFragmentHeaderInteraction(monthYear);
-        }*/
+        Log.d(TAG, "onResume в конце" + monthYear);
 
     }
 

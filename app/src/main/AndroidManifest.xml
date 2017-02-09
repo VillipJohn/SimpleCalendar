@@ -10,7 +10,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".ui.MainActivity"
-            android:screenOrientation="locked">
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +20,12 @@
         </activity>
         <activity
             android:name=".ui.ListEventsActivity"
-            android:label="@string/title_activity_list_events" >
+            android:screenOrientation="locked"
+            android:label="@string/title_activity_list_events"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.villip.simplecalendar.ui.MainActivity" />
         </activity>
     </application>
 

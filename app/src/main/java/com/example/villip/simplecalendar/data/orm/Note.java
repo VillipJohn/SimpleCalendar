@@ -11,9 +11,9 @@ public class Note {
     @DatabaseField
     private String date;
     @DatabaseField
-    private String notes_type;
+    public String notes_type;
     @DatabaseField
-    private String notes_text;
+    public String notes_text;
     @DatabaseField
     private String alarm;
 

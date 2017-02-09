@@ -15,17 +15,20 @@ public class MainActivity extends AppCompatActivity implements MainHeaderFragmen
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       // Log.d(TAG, "onCreate активити");
+
+        // Убрать ActionBar
+        getSupportActionBar().hide();
+        // Log.d(TAG, "onCreate активити");
         setContentView(R.layout.activity_main);
     }
 
     @Override
-    public void onFragmentHeaderInteraction(String monthYearFromFragment) {
+    public void onFragmentHeaderInteraction(String monthYearFromHeaderFragment) {
         MainContentFragment fragmentContent = (MainContentFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_content_in_activity);
-        Log.d(TAG, "MainActivity onFragmentHeaderInteraction monthYearFromFragment = " + monthYearFromFragment);
+        Log.d(TAG, "MainActivity onFragmentHeaderInteraction monthYearFromHeaderFragment = " + monthYearFromHeaderFragment);
         //if (fragment != null && fragment.isInLayout()) {
 
-        fragmentContent.onSetupData(monthYearFromFragment);
+        fragmentContent.onSetupData(monthYearFromHeaderFragment);
 
     }
 

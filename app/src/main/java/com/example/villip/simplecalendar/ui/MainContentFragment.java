@@ -52,7 +52,7 @@ public class MainContentFragment extends Fragment {
 
       recyclerViewDays = (RecyclerView) rootView.findViewById(R.id.recycler_view);
 
-      Log.d(TAG, "From MainContentFragment.onCreateView staticMonthYear = "+ staticMonthYear);
+      //Log.d(TAG, "From MainContentFragment.onCreateView staticMonthYear = "+ staticMonthYear);
 
       return rootView;
     }
@@ -121,7 +121,7 @@ public class MainContentFragment extends Fragment {
              }
     }
 
-    int selectedYear = selectedMonthYear / 12 + 2016;
+    int selectedYear = selectedMonthYear / 12 + 2017;
     int selectedMonth = selectedMonthYear % 12;
 
     Calendar calendar = Calendar.getInstance();
